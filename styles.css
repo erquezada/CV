@@ -49,3 +49,68 @@ main {
 .book-list li:hover {
     background-color: #ddd;
 }
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 12px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  /* Dropdown Content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: #333;
+  }
+  
+  /* Change color of links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+/* Add your existing CSS styles here */
+
+/* Style the new sections */
+.about-me {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.about-me h2 {
+    margin-top: 20px;
+}
+
+.about-me p {
+    line-height: 1.4;
+}
+
+.about-me ul, .about-me ol {
+    padding-left: 20px;
+}
+
+/* Add more styles as needed */

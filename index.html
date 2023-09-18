@@ -2,109 +2,314 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Eric Quezada's Personal Site</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .resume-section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        th {
+            text-align: left;
+        }
+
+        .ratings {
+            font-size: 1.2em;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        /* Dropdown Button */
+        .dropbtn {
+            background-color: #007bff;
+            color: white;
+            padding: 8px 12px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        /* Dropdown Content (hidden by default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            color: #333;
+        }
+
+        /* Change color of links on hover */
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
 </head>
 
 <body>
-  <table cellspacing="20">
-    <tr>
-      <td><img src="images/Eric Quezada.jpeg" alt="Eric Quezada profile picture"></td>
-      <td>
+    <header>
         <h1>Eric Quezada</h1>
-        <p><em>Computer Science student at <strong><a href="https://www.utep.edu/cs/">The University of Texas at El Paso</a></strong>.</em></p>
-        <p>I am an undergraduate student majoring in Computer Science. I attend the University of Texas at El Paso (UTEP). I like to play the piano, a few of my favorite composers are J.S. Bach, and W.A. Mozart</p>
-      </td>
-    </tr>
-  </table>
-  <hr>
-  <h3>Education</h3>
-  <p>University of Texas at El Paso 2021 - Present
-  <ul>
-    <li>Bachelor of Science in Computer Science, 3.50 GPA</li>
-  </ul>
+        <!-- Dropdown Menu -->
+        <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                <a href="books.html">Book List</a>
+                <a href="music.html">Music List</a>
+                <a href="hobbies.html">Hobbies List</a> 
+    </header>
+    <main>
+      <section class="resume-section">
+        <h2>Summary</h2>
+        <p>I am a Computer Science student with a strong passion for solving problems. I have had the pleasure of successfully completing three summer internships, one with UW - Madison, one with NASA JPL, and one with the U.S. D.O.D. I am currently seeking internships for the summer of 2024.</p>
+    </section>
+    
+        <section class="resume-section">
+          <h2>Education</h2>
+          <ul>
+              <li>
+                  <strong>The University of Texas at El Paso</strong>
+                  <ul>
+                      <li>Bachelor of Science in Computer Science</li>
+                      <li>Minor in Mathematics</li> <!-- Added minor -->
+                      <li>GPA: 3.47</li> <!-- Updated GPA -->
+                  </ul>
+              </li>
+              <li>
+                  <strong>El Paso Community College</strong>
+                  <ul>
+                      <li>Associate of Science in Computer Science </li>
+                      <li>GPA: 3.56</li>
+                  </ul>
+              </li>
+          </ul>
+      </section>
+
+      <section class="resume-section">
+        <h2>Work Experience</h2>
+        <ul>
+            <li>
+                <strong>Summer Undergraduate Research Intern</strong>
+                <br>
+                The University of Wisconsin – Madison, Water Science and Engineering Laboratory, Madison, WI
+                <br>
+                June 2023 – August 2023
+                <ul>
+                    <li>Developed Python scripts to automate data processing and analysis of water contamination trends in the Midwestern Cambrian-Ordovician Aquifer System using publicly available data.</li>
+                    <li>Conducted Theil-Sen regression and Linear regression analyses in R which revealed concerning trends in water contamination across the aquifer system.</li>
+                    <li>Utilized QGIS for data visualization and mapping, emphasizing the importance of continuous monitoring and addressing public health concerns related to water pollutants.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Project Management Intern</strong>
+                <br>
+                NASA Jet Propulsion Laboratory – Information Technology Support Directorate, Pasadena, CA
+                <br>
+                June 2022 – October 2022
+                <ul>
+                    <li>Improved communications by implementing a content management system using Python and Django with a team of 6 engineers, to design a digital signage interface for various organizations to use, thus improving the ability to manage and display information to 6,000 employees and visitors.</li>
+                    <li>Implemented and maintained 30 new digital signage appliances, ensuring smooth and effective communication, and addressed issues that were affecting the performance of previous appliances.</li>
+                    <li>Collaborated with the IT team to develop monitoring scripts using PowerShell, enhancing the proactive identification of potential issues, and reducing downtime.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>United States Department of Defense Software Engineer Intern</strong>
+                <br>
+                White Sands Missile Range – Software and Data Analysis Branch, White Sands, NM
+                <br>
+                June 2021 – August 2021
+                <ul>
+                    <li>Conducted verification and validation testing to enhance the reliability of defense system software.</li>
+                    <li>Collaborated with a team of 10+ engineers and interns to develop an intuitive graphical user interface application using C++ that led to the improvement, and functionality for defense system software.</li>
+                    <li>Improved efficiency of outdated code by refactoring to enhance the maintainability and scalability of defense system software.</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+        
+    <section class="resume-section">
+      <h2>Skills</h2>
+      <ul>
+          <li>
+              <strong>Programming Languages:</strong>
+              <ul>
+                  <li>Java</li>
+                  <li>JavaScript</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Python</li>
+                  <li>C</li>
+                  <li>C++</li>
+                  <li>R</li>
+              </ul>
+          </li>
+          <li>
+              <strong>Frameworks and Automation:</strong>
+              <ul>
+                  <li>Django</li>
+                  <li>QGIS</li>
+                  <li>PowerShell</li>
+              </ul>
+          </li>
+          <li>
+              <strong>Version Control and Collaboration:</strong>
+              <ul>
+                  <li>GitHub</li>
+              </ul>
+          </li>
+      </ul>
+  </section>
+  
+  <section class="resume-section">
+    <h2>Projects</h2>
+    <ul>
+      <li>
+        <strong>Introduction to Programming</strong>
+        <br>
+        <a href="https://github.com/erquezada/Introduction-to-Programming-Projects" target="_blank">Link to Repo 1</a>
+        <p>CS 1: Introduction to Programming in Java.</p>
+    </li>
+  
+        <li>
+            <strong>Elementary Data Structures and Algorithms</strong>
+            <br>
+            <a href="https://github.com/erquezada/Elementary-Data-Structures-and-Algorithms" target="_blank">Link to Repo 2</a>
+            <p>CS 2: Elementary Data Structures and Algorithms in Java.</p>
+        </li>
+        <li>
+            <strong>Data Structures</strong>
+            <br>
+            <a href="https://github.com/erquezada/Data-Structures" target="_blank">Link to Repo 3</a>
+            <p>CS 3: Data Structures in Python.</p>
+        </li>
+        <li>
+          <strong>Digital Systems Design</strong>
+          <br>
+          <a href="https://github.com/erquezada/Digital-Systems-Design" target="_blank">Link to Repo 4</a>
+          <p>EE:  Digital Systems Design I.</p>
+      </li>
+      <li>
+        <strong>Computer Organization</strong>
+        <br>
+        <a href="https://github.com/erquezada/Computer-Architecture-" target="_blank">Link to Repo 5</a>
+        <p>CS: Computer Architecture I.</p>
+    </li>
+    <li>
+      <strong>Automata</strong>
+      <br>
+      <a href="https://github.com/erquezada/automata" target="_blank">Link to Repo 6</a>
+      <p>CS: Automata.</p>
+  </li>
+  <li>
+    <strong>Precalculus</strong>
+    <br>
+    <a href="https://github.com/erquezada/Precalculus" target="_blank">Link to Repo 7</a>
+    <p>Math: Precalculus.</p>
+</li>
+<li>
+  <strong>Calculus I</strong>
   <br>
-  El Paso Community College 2018 - 2020
-  <ul>
-    <li>Associate of Arts in Multi-Disciplinary Studies, 3.56 GPA </li>
-  </ul>
-  <hr>
-  <h3>Work Experience</h3>
-  <table cellspacing="10">
-    <thead>
-      <tr>
-        <th>Work</th>
-        <th>Dates</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Artificial Intelliegence, Analytics, and Innovation Intern at NASA's Jet Propulsion Laboratory</td>
-        <td>June 2022 - Present</td>
-      </tr>
-      <tr>
-        <td>Undergraduate Assistant at The University of Texas at El Paso</td>
-        <td>January 2022 - Present</td>
-      </tr>
-      <tr>
-        <td>Academic Tutor at El Paso Community College</td>
-        <td>September 2021 - December 2021</td>
-      </tr>
-      <tr>
-        <td>Software Engineer Intern at The United States Department of Defense</td>
-        <td>June 2021 - August 2021</td>
-      </tr>
-    </tbody>
-  </table>
-  <hr>
-  <h3>Skills</h3>
-  <table cellspacing="10">
-    <tr>
-      <td>
-        <table>
-          <tr>
-            <td>Java</td>
-            <td>⭐️⭐️⭐️</td>
-          </tr>
-          <tr>
-            <td>Python</td>
-            <td>⭐️⭐️⭐️</td>
-          </tr>
-          <tr>
-            <td>C++</td>
-            <td>⭐️⭐️</td>
-          </tr>
-          <tr>
-            <td>C</td>
-            <td>⭐️</td>
-          </tr>
-        </table>
-      </td>
-      <td>
-        <table>
-          <tr>
-            <td>HTML</td>
-            <td>⭐️⭐️⭐️</td>
-          </tr>
-          <tr>
-            <td>CSS</td>
-            <td>⭐️⭐️⭐️</td>
-          </tr>
-          <tr>
-            <td>Javascript</td>
-            <td>⭐️⭐️</td>
-          </tr>
-          <tr>
-            <td>Piano</td>
-            <td>⭐️⭐️⭐️⭐️</td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-  </table>
-  <hr>
-  <a href="hobbies.html">My hobbies</a>
+  <a href="https://github.com/erquezada/Calculus-I" target="_blank">Link to Repo 8</a>
+  <p>Math: Calculus I.</p>
+</li>
+<li>
+  <strong>Calculus II</strong>
   <br>
-  <a href="contact.html">Contact me</a>
+  <a href="https://github.com/erquezada/calculus-II" target="_blank">Link to Repo 9</a>
+  <p>Math: Calculus II.</p>
+</li>
+<li>
+  <strong>Calculus III</strong>
+  <br>
+  <a href="https://github.com/erquezada/calculus-III" target="_blank">Link to Repo 10</a>
+  <p>Math: Calculus III.</p>
+</li>
+<li>
+  <strong>Statistics</strong>
+  <br>
+  <a href="https://github.com/erquezada/statistics" target="_blank">Link to Repo 11</a>
+  <p>Math: Statistics.</p>
+</li>
+<li>
+  <strong>Discrete Structures I</strong>
+  <br>
+  <a href="https://github.com/erquezada/discrete-structures-I" target="_blank">Link to Repo 12</a>
+  <p>Math: Discrete Structures I.</p>
+</li>
+<li>
+  <strong>Discrete Structures II</strong>
+  <br>
+  <a href="https://github.com/erquezada/discrete-structures-II" target="_blank">Link to Repo 13</a>
+  <p>Math: Discrete Structures II.</p>
+</li>
+<li>
+  <strong>Matrix Algebra</strong>
+  <br>
+  <a href="https://github.com/erquezada/matrix-algebra" target="_blank">Link to Repo 14</a>
+  <p>Math: Matrix Algebra.</p>
+</li>
+        <li>
+            <strong>Principles of Mathematics</strong>
+            <br>
+            <a href="https://github.com/erquezada/principles-of-mathematics" target="_blank">Link to Repo 15</a>
+            <p>Math: Principles of Mathematics.</p>
+        </li>
+    </ul>
+</section>
+
+        <section class="resume-section">
+          <h2>GitHub Repository</h2>
+          <p>You can find my GitHub repository <a href="https://github.com/erquezada?tab=repositories" target="_blank">here</a>.</p>
+      </section>
+      

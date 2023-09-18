@@ -1,19 +1,56 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
+<html lang="en">
+<head>
     <meta charset="utf-8">
-    <title>My Hobbies</title>
-  </head>
-  <body>
-  <h3>My Hobbies</h3>
-    <p>Here are a few of my hobbies.</p>
-    <ol>
-      <li>Playing <a href="https://www.youtube.com/watch?v=cjQTK3lpBBM">piano</a></li>
-      <li><a href="images/Slide Rock 2021.jpeg">Traveling</a></li>
-      <li>Learning new <a href="https://www.udemy.com/">things</a></li>
-      <li>Reading <a href="books.html">Books</a></li>
-    </ol>
-    <p>Sorry if I sound a bit boring. LOL </p>
-    <br>
-  </body>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Me</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>About Me</h1>
+    </header>
+    <main class="about-me">
+        <section class="intro">
+            <h2>Introduction</h2>
+            <p>Hello! I'm Eric Quezada, a computer science and mathematics student with a passion for learning and problem-solving.</p>
+        </section>
+        <section class="hobbies">
+            <h2>My Hobbies</h2>
+            <p>When I'm not immersed in the world of code and equations, I enjoy various hobbies:</p>
+            <ul>
+                <li>Playing <a href="https://www.youtube.com/watch?v=cjQTK3lpBBM" target="_blank">piano</a></li>
+                <li><a href="images/Slide_Rock_2021.jpeg" target="_blank">Traveling</a></li>
+                <li>Learning new <a href="https://www.udemy.com/" target="_blank">things</a></li>
+                <li>Reading <a href="books.html">Books</a></li>
+            </ul>
+        </section>
+        <section class="internships">
+          <h2>My Internships</h2>
+          <p>I've had the opportunity to work in various exciting internships:</p>
+      
+          <div class="internship">
+              <strong>Summer Undergraduate Research Intern</strong><br>
+              The University of Wisconsin – Madison, Water Science and Engineering Laboratory, Madison, WI<br>
+              June 2023 – August 2023<br>
+              <p>During this internship, I developed Python scripts to automate data processing and analysis of water contamination trends in the Midwestern Cambrian-Ordovician Aquifer System using publicly available data. I conducted Theil-Sen regression and Linear regression analyses in R, which revealed concerning trends in water contamination across the aquifer system. Additionally, I utilized QGIS for data visualization and mapping, emphasizing the importance of continuous monitoring and addressing public health concerns related to water pollutants.</p>
+          </div>
+      
+          <div class="internship">
+              <strong>Project Management Intern</strong><br>
+              NASA Jet Propulsion Laboratory – Information Technology Support Directorate, Pasadena, CA<br>
+              June 2022 – October 2022<br>
+              <p>During my internship at NASA JPL, I played a key role in improving communications by implementing a content management system using Python and Django. Working with a team of 6 engineers, we designed a digital signage interface for various organizations, enhancing their ability to manage and display information to 6,000 employees and visitors. I also implemented and maintained 30 new digital signage appliances, ensuring smooth and effective communication and addressing issues that were affecting the performance of previous appliances. Additionally, I collaborated with the IT team to develop monitoring scripts using PowerShell, which improved proactive issue identification and reduced downtime.</p>
+          </div>
+      
+          <div class="internship">
+              <strong>United States Department of Defense Software Engineer Intern</strong><br>
+              White Sands Missile Range – Software and Data Analysis Branch, White Sands, NM<br>
+              June 2021 – August 2021<br>
+              <p>During my internship with the U.S. Department of Defense, I conducted verification and validation testing to enhance the reliability of defense system software. Collaborating with a team of 10+ engineers and interns, we developed an intuitive graphical user interface application using C++, leading to improvements and enhanced functionality for defense system software. I also contributed to improving the efficiency of outdated code by refactoring it, thereby enhancing the maintainability and scalability of defense system software.</p>
+          </div>
+      </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
 </html>
